@@ -15,6 +15,7 @@ jobs:
 
       - name: Update Salt
         run: |
+          ls -la
           cd /srv
           if [ -d /srv/salt ]; then
               cd /srv/salt
