@@ -15,7 +15,7 @@ jobs:
 
       - name: Update Salt
         run: |
-          cd srv
+          cd /srv
           if [ -d /srv/salt ]; then
               cd /srv/salt
               git pull
