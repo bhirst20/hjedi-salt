@@ -6,14 +6,14 @@ on:
       - main
 
 jobs:
-  tag_release:
+  run:
     runs-on: self-hosted
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.1.7
 
-      - name: Build image
+      - name: Update Salt
         run: |
           cd srv
           if [ -d /srv/salt ]; then
