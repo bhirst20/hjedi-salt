@@ -19,6 +19,6 @@ jobs:
           if [ -d /srv/salt ]; then
               cd /srv/salt
               git pull
-          else:
+          else
               git clone https://github.com/hjedi/salt.git /srv/salt
           fi
