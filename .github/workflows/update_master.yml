@@ -15,10 +15,9 @@ jobs:
 
       - name: Update Salt
         run: |
-          ls -la
           rm -rf .git*
 
           if [ ! -d /srv/salt ]; then
               mkdir /srv/salt
           fi
-          rsync -a ./ /srv/salt
+          cp -r ./ /srv/salt
