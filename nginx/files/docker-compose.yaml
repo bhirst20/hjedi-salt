@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  haproxy:
+    image: nginx:latest
+    container_name: nginx
+    restart: always
+    volumes:
+      - /mnt/data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /etc/letsencrypt/archive/hjedi.net-0001/cert1.pem:/etc/nginx/certs/cert.pem:ro
+      - /etc/letsencrypt/archive/hjedi.net-0001/privkey1.pem:/etc/nginx/certs/privkey-local.pem;:ro
+      - /etc/letsencrypt/archive/hjedi.net-0001/fullchain1.pem:/etc/nginx/certs/fullchain-local.pem:ro
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8443:8443"

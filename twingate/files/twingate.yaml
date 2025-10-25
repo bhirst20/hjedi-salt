@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  twingate-passionate-mule:
+    image: twingate/connector:1
+    restart: unless-stopped
+    environment:
+      - TWINGATE_NETWORK="hightrailstudios"
+      - TWINGATE_ACCESS_TOKEN="eyJhbGciOiJFUzI1NiIsImtpZCI6IjlZWGlrMzUyd2czOHRFc2JYMmhQa1loX2FyVkg0RE9QYUVidW9LdEgtbTQiLCJ0eXAiOiJEQVQifQ.eyJhdWRzIjpudWxsLCJudCI6IkFOIiwiYWlkIjoiNjMyNDI3IiwiZGlkIjoiMjYzMDQzMSIsInJudyI6MTc2MTE3NDQ2MiwianRpIjoiNDE4ODA2NTgtYWZlMy00MzFjLWJkMjctNDU0ODgyM2IyZWY5IiwiaXNzIjoidHdpbmdhdGUiLCJhdWQiOiJoaWdodHJhaWxzdHVkaW9zIiwiZXhwIjoxNzYxMTc3NzY0LCJpYXQiOjE3NjExNzQxNjQsInZlciI6IjQiLCJ0aWQiOiIyODY0NyIsInJuZXRpZCI6IjM1Nzg5In0.zJVGk2N5QHBi8Xcx1Dz85YEe6yCZ5BJlgkLzzDsmPiqQ_-cLGimG67Iva5oeFmBHvrxBEGOq5I_TDBpt0bKUQQ"
+      - TWINGATE_REFRESH_TOKEN="5H-b0sUrh3a4mmLWIBfmkI0rgKNLLlUSsY1yzInGWWw0MACl7d0DDgjqdWPngctQ-Ui7-j1_lbbBMjLsdGnrhZKrSvWypqENom5BBqnalVUNb-Pw8nf-YIGAqwzSijA7bHTXYA"
+      - TWINGATE_LABEL_HOSTNAME="`hostname`" 
+      - TWINGATE_LABEL_DEPLOYED_BY="docker"
+    container_name: twingate-passionate-mule
