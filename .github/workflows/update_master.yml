@@ -18,7 +18,7 @@ jobs:
           ls -la
           rm -rf .git*
 
-          if [ !-d /srv/salt ]; then
+          if [ ! -d /srv/salt ]; then
               mkdir /srv/salt
           fi
           rsync -a ./ /srv/salt
