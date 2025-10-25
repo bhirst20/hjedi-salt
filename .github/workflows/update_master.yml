@@ -21,3 +21,4 @@ jobs:
               git pull
           else:
               git clone https://github.com/hjedi/salt.git /srv/salt
+          fi
