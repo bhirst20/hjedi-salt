@@ -1,4 +1,10 @@
+cron:
+  pkg.installed
+
 curl:
+  pkg.installed
+
+dnsutils:
   pkg.installed
 
 duf:
