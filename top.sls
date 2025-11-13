@@ -11,3 +11,6 @@ base:
 
   'osgiliath':
     - profile.core-linux
+
+  'lothlorien':
+    - profile.controlcenter

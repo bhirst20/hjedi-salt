@@ -22,6 +22,9 @@ eza:
 glances:
   pkg.installed
 
+nfs-common:
+  pkg.installed
+
 nmap:
   pkg.installed
 
@@ -32,6 +35,9 @@ pipx:
   pkg.installed
 
 ripgrep:
+  pkg.installed
+
+rsync:
   pkg.installed
 
 unzip:
