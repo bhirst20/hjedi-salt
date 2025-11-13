@@ -52,8 +52,8 @@ debian_install_key:
 
 debian_repo_file:
   file.managed:
-    - name: /etc/apt/sources.list.d/docker.list
-    - source: salt://docker/files/repo.ubuntu
+    - name: /etc/apt/sources.list.d/docker.sources
+    - source: salt://docker/files/repo.debian
 
 debian_docker-ce:
   pkg.installed:
