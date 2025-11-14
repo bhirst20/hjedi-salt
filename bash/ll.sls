@@ -4,7 +4,6 @@ ll_cmds:
     - user: root
     - group: root
     - mode: 0755
-    - text:
-      - alias ll="ls -lah"
+    - source: salt://bash/files/list_files.sh
 
 
