@@ -5,7 +5,7 @@ download_cli:
   file.managed:
     - name: /tmp/awscliv2.zip
     - source: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
-    - source_hash: sha256=91320f9ce4e420246dbc4c624da24d70b6e68a601688bab3c74da2c6460323a5
+    - source_hash: sha256=810500e78651e338c9b64956cc841f0ef36aa1eb24b9d251a68318587c465755
     - mode: '0755'
 
 unzip_cli:
