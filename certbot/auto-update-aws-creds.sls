@@ -8,8 +8,8 @@ auto-update-script:
 
 auto-update-cronjob:
   cron.present:
-    - name: '/usr/local/sbin/auto-update-aws-creds.py
+    - name: /usr/local/sbin/auto-update-aws-creds.py
     - user: root
-    - minute: '15'
-    - hour: '0'
-    - daymonth: '1'
+    - minute: 15
+    - hour: 0
+    - daymonth: 1
