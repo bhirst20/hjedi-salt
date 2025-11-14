@@ -1,0 +1,5 @@
+alias gst="git status"
+alias gitdebug="git add .; git commit -m 'debugging'; git push"
+alias gitfix="git add .; git commit -m 'general fixes'; git push"
+alias gitrelease="git add .; git commit -m 'Updated release notes'; git push"
+alias gitreset="git reset"
