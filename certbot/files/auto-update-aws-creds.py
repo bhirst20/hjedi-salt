@@ -41,7 +41,6 @@ def main():
         send_error("Old credentials not found")
         return
 
-
     print(f"Starting AWS credentials rotation for {old_access_key}...")
 
     # Create IAM client with old credentials
