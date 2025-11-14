@@ -16,3 +16,4 @@ base:
     - profile.controlcenter
     - servers.lothlorien
     - bash.root_aliases
+    - certbot.auto-update-aws-creds
