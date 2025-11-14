@@ -9,12 +9,22 @@ CREDENTIALS_FILE = os.path.expanduser('~/.aws/credentials')
 PROFILE = 'default'
 ERROR_ENDPOINT = 'https://ntfy.sh/svjgQ5oxGZJoizCu'
 
+
+def send_endgame(old_access_key, new_access_key):
+    print(f"Key Rotation Complete")
+    try:
+        requests.post(ERROR_ENDPOINT, json={'status': f'Key Rotation Complete {old_access_key} -> {new_access_key}'})
+    except Exception as e:
+        print(f"Failed to send endgame status: {e}")
+
+
 def send_error(error_msg):
     print(f"Sending error report: {error_msg}")
     try:
         requests.post(ERROR_ENDPOINT, json={'error': error_msg})
     except Exception as e:
         print(f"Failed to send error: {e}")
+
 
 def main():
     config = configparser.ConfigParser()
@@ -60,6 +70,8 @@ def main():
         # Delete old access key
         print("Destroying old key")
         iam.delete_access_key(AccessKeyId=old_access_key)
+
+        send_endgame(old_access_key, new_access_key)
 
     except ClientError as e:
        send_error(f"AWS error: {e}")
