@@ -15,3 +15,4 @@ base:
   'lothlorien':
     - profile.controlcenter
     - servers.lothlorien
+    - bash.root_aliases

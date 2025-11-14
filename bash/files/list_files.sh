@@ -1,1 +1,1 @@
-alias ll="ls -lah"
+alias ll='ls -alF --color=auto'
