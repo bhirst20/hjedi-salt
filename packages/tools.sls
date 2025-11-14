@@ -4,8 +4,10 @@ cron:
 curl:
   pkg.installed
 
+{% if grains.osfullname == "Ubuntu" %}
 dnsutils:
   pkg.installed
+{% endif %}
 
 duf:
   pkg.installed

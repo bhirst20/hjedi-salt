@@ -7,14 +7,14 @@ ca-certificates:
 gnupg-agent:
   pkg.installed
 
-software-properties-common:
-  pkg.installed
-
 root_installed_docker:
   file.managed:
     - name: /root/installed_repo_docker_confirm
 
 {% if grains.osfullname == "Ubuntu" %}
+software-properties-common:
+  pkg.installed
+
 ubuntu_install_key:
   cmd.wait:
     - name: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
