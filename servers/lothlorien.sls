@@ -1,6 +1,6 @@
 data-fast-path:
   file.directory:
-    - name: /mnt/data_highspeed
+    - name: /mnt/data
     - user: root
     - group: root
     - mode: 0755
