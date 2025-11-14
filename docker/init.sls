@@ -57,16 +57,32 @@ debian_repo_file:
 
 debian_docker-ce:
   pkg.installed:
+    - name: docker-ce
     - require:
       - file: debian_repo_file
 
 debian_docker-ce-cli:
   pkg.installed:
+    - name: docker-ce-cli
     - require:
       - file: debian_repo_file
 
 debian_containerd.io:
   pkg.installed:
+    - name: containerd.io
+    - require:
+      - file: debian_repo_file
+
+
+debian_docker-buildx-plugin:
+  pkg.installed:
+    - name: docker-buildx-plugin
+    - require:
+      - file: debian_repo_file
+
+debian_docker-compose-plugin:
+  pkg.installed:
+    - name: docker-compose-plugin
     - require:
       - file: debian_repo_file
 
