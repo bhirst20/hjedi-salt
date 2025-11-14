@@ -14,3 +14,4 @@ base:
 
   'lothlorien':
     - profile.controlcenter
+    - servers.lothlorien
