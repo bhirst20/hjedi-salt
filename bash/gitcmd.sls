@@ -1,4 +1,4 @@
-ll_enabled:
+git_cmds:
   file.append:
     - name: /etc/bash_completion.d/list_files
     - user: root

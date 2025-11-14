@@ -1,4 +1,4 @@
-ll_enabled:
+ll_cmds:
   file.append:
     - name: /etc/bash_completion.d/list_files
     - user: root

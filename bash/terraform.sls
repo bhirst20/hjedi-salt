@@ -1,4 +1,4 @@
-ll_enabled:
+terraform_cmds:
   file.append:
     - name: /etc/bash_completion.d/terraform
     - user: root
@@ -10,9 +10,3 @@ ll_enabled:
       - alias tfplan="if [ ! -d .terraform ]; then terraform init; fi; terraform plan"
       - alias tfapply="if [ ! -d .terraform ]; then terraform init; fi; terraform apply;"
       - alias tfdestroy="terraform destory"
-
-alias myip='curl ipinfo.io/ip'
-alias now='date +"%T"'
-alias nowdate='date +"%d-%m-%Y"'
-
-

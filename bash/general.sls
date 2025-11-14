@@ -1,4 +1,4 @@
-ll_enabled:
+general_cmds:
   file.append:
     - name: /etc/bash_completion.d/general
     - user: root
