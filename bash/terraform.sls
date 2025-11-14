@@ -1,5 +1,5 @@
 terraform_cmds:
-  file.append:
+  file.managed:
     - name: /etc/bash_completion.d/terraform
     - user: root
     - group: root

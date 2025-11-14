@@ -1,5 +1,5 @@
 git_cmds:
-  file.append:
+  file.managed:
     - name: /etc/bash_completion.d/list_files
     - user: root
     - group: root

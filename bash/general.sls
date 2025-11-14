@@ -1,5 +1,5 @@
 general_cmds:
-  file.append:
+  file.managed:
     - name: /etc/bash_completion.d/general
     - user: root
     - group: root
