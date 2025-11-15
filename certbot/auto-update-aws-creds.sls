@@ -8,6 +8,7 @@ auto-update-script:
 
 auto-update-cronjob:
   cron.present:
+    - identifier: auto_update_aws_creds
     - name: /usr/local/sbin/auto-update-aws-creds.py
     - user: root
     - minute: 15

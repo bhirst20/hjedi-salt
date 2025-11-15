@@ -8,7 +8,8 @@ auto_cert_update:
 
 auto_cert_update_cron:
   cron.present:
-    - name: letsencrypt_certificate_update
+    - identifier: letsencrypt_certificate_update
+    - name: /usr/local/sbin/update_certs.sh
     - user: root
     - minute: 0
     - hour: 3
