@@ -1,3 +1,6 @@
+#-----------------------
+# Data Paths Directories
+#-----------------------
 data-fast-path:
   file.directory:
     - name: /mnt/data
@@ -12,6 +15,9 @@ data-slow-path:
     - group: root
     - mode: 0755
 
+#-----------------------
+# Database Directories
+#-----------------------
 data-fast-psql-path:
   file.directory:
     - name: /mnt/data/psql
@@ -26,6 +32,9 @@ data-fast-mongodb-path:
     - group: 999
     - mode: 0755
 
+#-----------------------
+# Foundry Directories
+#-----------------------
 data-fast-foundry-path:
   file.directory:
     - name: /mnt/data/foundry
@@ -47,6 +56,9 @@ data-fast-foundry13-path:
     - group: 999
     - mode: 0755
 
+#-----------------------
+# Gitea Directories
+#-----------------------
 data-fast-gitea-path:
   file.directory:
     - name: /mnt/data/gitea
@@ -54,6 +66,9 @@ data-fast-gitea-path:
     - group: 999
     - mode: 0755
 
+#-----------------------
+# n8n Directories
+#-----------------------
 data-fast-n8n-path:
   file.directory:
     - name: /mnt/data/n8n
@@ -61,6 +76,9 @@ data-fast-n8n-path:
     - group: 999
     - mode: 0755
 
+#-----------------------
+# Salt Directories
+#-----------------------
 srv-path:
   file.directory:
     - name: /srv
@@ -68,6 +86,9 @@ srv-path:
     - group: github_actions
     - mode: 0755
 
+#-----------------------
+# Registry Directories
+#-----------------------
 data-lowspeed-registry-path:
   file.directory:
     - name: /mnt/data_lowspeed/registry
@@ -75,39 +96,40 @@ data-lowspeed-registry-path:
     - group: 999
     - mode: 0755
 
-data-lowspeed-registry-path:
+data-lowspeed-registry-data-path:
   file.directory:
     - name: /mnt/data_lowspeed/registry/data
     - user: 999
     - group: 999
     - mode: 0755
 
-data-lowspeed-registry-path:
+data-lowspeed-registry-config/path:
   file.directory:
     - name: /mnt/data_lowspeed/registry/config
     - user: 999
     - group: 999
     - mode: 0755
 
-
+#-----------------------
+# Signoz Directories
+#-----------------------
 data-lowspeed-signoz-clickhouse-path:
   file.directory:
-    - name: /mnt/data_lowspeed/registry/config
+    - name: /mnt/data_lowspeed/signoz/clickhouse
     - user: 999
     - group: 999
     - mode: 0755
-
 
 data-lowspeed-signoz-sqlite-path:
   file.directory:
-    - name: /mnt/data_lowspeed/registry/config
+    - name: /mnt/data_lowspeed/signoz/sqlite
     - user: 999
     - group: 999
     - mode: 0755
 
 data-lowspeed-signoz-zookeeper-path:
   file.directory:
-    - name: /mnt/data_lowspeed/registry/config
+    - name: /mnt/data_lowspeed/signoz/zookeeper
     - user: 999
     - group: 999
     - mode: 0755
