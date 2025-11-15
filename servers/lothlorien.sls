@@ -60,3 +60,10 @@ data-fast-n8n-path:
     - user: 999
     - group: 999
     - mode: 0755
+
+srv-path:
+  file.directory:
+    - name: /srv
+    - user: github_actions
+    - group: github_actions
+    - mode: 0755
