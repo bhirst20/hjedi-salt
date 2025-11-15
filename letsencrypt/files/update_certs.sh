@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 files=("cert.pem" "chain.pem" "fullchain.pem" "privkey.pem")
 
