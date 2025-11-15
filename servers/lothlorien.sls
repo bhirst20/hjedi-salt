@@ -113,6 +113,13 @@ data-lowspeed-registry-config/path:
 #-----------------------
 # Signoz Directories
 #-----------------------
+data-lowspeed-signoz-path:
+  file.directory:
+    - name: /mnt/data_lowspeed/signoz
+    - user: 999
+    - group: 999
+    - mode: 0755
+
 data-lowspeed-signoz-clickhouse-path:
   file.directory:
     - name: /mnt/data_lowspeed/signoz/clickhouse
