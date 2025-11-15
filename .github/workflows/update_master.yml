@@ -7,7 +7,10 @@ on:
 
 jobs:
   run:
-    runs-on: self-hosted
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      matrix:
+        runner: [lothlorien, rivendell]
 
     steps:
       - name: Checkout repository
