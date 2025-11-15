@@ -88,3 +88,26 @@ data-lowspeed-registry-path:
     - user: 999
     - group: 999
     - mode: 0755
+
+
+data-lowspeed-signoz-clickhouse-path:
+  file.directory:
+    - name: /mnt/data_lowspeed/registry/config
+    - user: 999
+    - group: 999
+    - mode: 0755
+
+
+data-lowspeed-signoz-sqlite-path:
+  file.directory:
+    - name: /mnt/data_lowspeed/registry/config
+    - user: 999
+    - group: 999
+    - mode: 0755
+
+data-lowspeed-signoz-zookeeper-path:
+  file.directory:
+    - name: /mnt/data_lowspeed/registry/config
+    - user: 999
+    - group: 999
+    - mode: 0755
