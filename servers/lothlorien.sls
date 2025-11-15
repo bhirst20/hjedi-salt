@@ -67,3 +67,10 @@ srv-path:
     - user: github_actions
     - group: github_actions
     - mode: 0755
+
+data-lowspeed-registry-path:
+  file.directory:
+    - name: /mnt/data_lowspeed/registry
+    - user: 999
+    - group: 999
+    - mode: 0755
