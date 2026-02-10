@@ -383,7 +383,7 @@ http {
     server {
         listen 443 ssl;
 
-        server_name piwigo.hjedi.net;
+        server_name fambam.hjedi.net;
 
         # Common SSL Settings
         ssl_protocols TLSv1.2 TLSv1.3;
