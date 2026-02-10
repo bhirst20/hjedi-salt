@@ -5,7 +5,7 @@ nginx-config-path:
 nginx_config:
   file.managed:
     - name: /mnt/data/nginx/nginx.conf
-    - source: salt://nginx/files/nginx.conf.{{ grains['hostname'] }}
+    - source: salt://nginx/files/nginx.conf.{{ grains['host'] }}
     - user: root
     - group: root
     - mode: 644
