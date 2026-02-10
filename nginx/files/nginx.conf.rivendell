@@ -40,6 +40,7 @@ http {
         }
     }
 
+    # Foundry 13 Internal
     server {
         listen 443 ssl;
 
@@ -70,6 +71,7 @@ http {
         }
     }
 
+    # Foundry 13 External
     server {
         listen 443 ssl;
 
@@ -98,6 +100,7 @@ http {
         }
     }
 
+    # Foundry 12 Internal
     server {
         listen 443 ssl;
 
@@ -126,6 +129,7 @@ http {
         }
     }
 
+    # Foundry 12 External
     server {
         listen 443 ssl;
 
@@ -155,16 +159,19 @@ http {
     }
 
     # Backend Definitions
+    # Foundry 12 Internal
     upstream foundry_backend {
-        server 192.168.4.50:30000 max_fails=5 fail_timeout=30s;
+        server 192.168.4.50:30012 max_fails=5 fail_timeout=30s;
     }
 
+    # Foundry 13 External
     upstream foundryu_backend {
         server 192.168.4.50:30013 max_fails=5 fail_timeout=30s;
     }
 
+    # Foundry 12 External
     upstream foundryguid_backend {
-        server 192.168.4.50:30000 max_fails=5 fail_timeout=30s;
+        server 192.168.4.50:30012 max_fails=5 fail_timeout=30s;
     }
 
     upstream portainer_backend {
